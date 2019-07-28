@@ -17,7 +17,7 @@ app.use(
         extended: false
     })
 )
-app.use(express.static(path.join(__dirname, '../build')));
+app.use(express.static(path.join(__dirname, 'frontendBundle/build')));
 
 const mongoURI = 'mongodb://hparwa:3121993@mongodb-2091-0.cloudclusters.net:10001/myusercollection?authSource=admin'
 
