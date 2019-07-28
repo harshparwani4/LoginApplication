@@ -18,7 +18,7 @@ app.use(
         extended: false
     })
 )
-app.use(express.static(path.join(__dirname, 'frontendBundle/dist')));
+app.use(express.static(path.join(__dirname, 'frontendBundle')));
 
 app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, 'frontendBundle/dist/index.html'));
