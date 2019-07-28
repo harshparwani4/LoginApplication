@@ -56,5 +56,6 @@ module.exports = {
             filename: '[name].[hash].css',
             chunkFilename: '[id].css',
           }),
-    ]
+    ],
+    mode: 'production'
 }
