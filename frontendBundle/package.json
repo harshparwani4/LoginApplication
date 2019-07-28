@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "webpack" : "webpack",
     "start": "webpack-dev-server --mode development --hot --open",
-    "build": "webpack-cli --mode production",
+    "build": "webpack --config webpack.config.js",
     "eslint": "eslint './src' --ext .jsx --ext .js",
     "eslint-fix": "yarn run eslint --fix"
   },
