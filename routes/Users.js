@@ -11,6 +11,9 @@ users.use(cors());
 
 process.env.SECRET_KEY = 'secret'
 
+users.get('/', (req, res)=>{
+    res.json({ email: 'registered!' })
+})
 users.post('/register', (req, res) => {
     const today = new Date()
     const userData = {
