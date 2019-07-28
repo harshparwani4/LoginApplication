@@ -4,6 +4,7 @@ import bodyParser from "body-parser";
 import mongoose from "mongoose";
 import Users from "./routes/Users";
 import dotenv from 'dotenv';
+import path from 'path';
 
 dotenv.config();
 let app = express();
