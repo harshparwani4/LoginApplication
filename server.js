@@ -20,6 +20,10 @@ app.use(
 )
 app.use(express.static(path.join(__dirname, 'frontendBundle/dist')));
 
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname+'frontendBundle/dist/index.html'));
+  });
+
 const mongoURI = 'mongodb://hparwa:3121993@mongodb-2091-0.cloudclusters.net:10001/myusercollection?authSource=admin'
 
 mongoose
