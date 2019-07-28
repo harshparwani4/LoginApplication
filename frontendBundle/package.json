@@ -5,9 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "webpack":"webpack",
     "start": "webpack-dev-server --mode development --hot --open",
-    "build": "npm run webpack -- --mode production",
+    "build": "webpack",
     "eslint": "eslint './src' --ext .jsx --ext .js",
     "eslint-fix": "yarn run eslint --fix"
   },
