@@ -5,7 +5,7 @@ import mongoose from "mongoose";
 import Users from "./routes/Users";
 import dotenv from 'dotenv';
 import path from 'path';
-
+import fs from 'fs';
 dotenv.config();
 let app = express();
 let port = process.env.PORT || 5000;
