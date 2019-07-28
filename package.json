@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon start.js",
     "start": "node start.js",
-    "heroku-postbuild": "cd frontendbundle && yarn && yarn run build"
+    "heroku-postbuild": "cd frontendBundle && yarn && yarn run build"
   },
   "keywords": [],
   "author": "",
