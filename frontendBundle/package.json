@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "webpack" : "webpack",
-    "start": "webpack-dev-server --mode development --hot --open",
+    "webpack": "webpack",
+    "start": "webpack-dev-server --mode production --hot --open",
     "build": "webpack --config webpack.config.js",
     "eslint": "eslint './src' --ext .jsx --ext .js",
     "eslint-fix": "yarn run eslint --fix"
@@ -36,6 +36,7 @@
     "eslint": "^6.1.0",
     "eslint-config-react": "^1.1.7",
     "eslint-loader": "^2.2.1",
-    "eslint-plugin-react": "^7.14.3"
+    "eslint-plugin-react": "^7.14.3",
+    "webpack-cli": "^3.3.6"
   }
 }

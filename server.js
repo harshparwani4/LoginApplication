@@ -18,19 +18,7 @@ app.use(
         extended: false
     })
 )
-app.use(express.static(path.join(__dirname, 'frontendBundle')));
-const directoryPath1 = path.join(__dirname, 'frontendBundle');
-fs.readdir(directoryPath1, function (err, files) {
-    //handling error
-    if (err) {
-        return console.log('Unable to scan directory: ' + err);
-    }
-    //listing all files using forEach
-    files.forEach(function (file) {
-        // Do whatever you want to do with the file
-        console.log(file);
-    });
-});
+app.use(express.static(path.join(__dirname, 'frontendBundle/dist')));
 
 app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, 'frontendBundle/dist/index.html'));
